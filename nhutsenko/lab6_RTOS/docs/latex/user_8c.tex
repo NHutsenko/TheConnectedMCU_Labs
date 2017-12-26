@@ -1,0 +1,223 @@
+\hypertarget{user_8c}{}\section{D\+:/\+K\+P\+I/pic32/\+The\+Connected\+M\+C\+U\+\_\+\+Labs/nhutsenko/lab6\+\_\+\+R\+T\+O\+S/\+Lab10\+\_\+\+Adv\+\_\+\+Concurrency/src/user.c File Reference}
+\label{user_8c}\index{D\+:/\+K\+P\+I/pic32/\+The\+Connected\+M\+C\+U\+\_\+\+Labs/nhutsenko/lab6\+\_\+\+R\+T\+O\+S/\+Lab10\+\_\+\+Adv\+\_\+\+Concurrency/src/user.\+c@{D\+:/\+K\+P\+I/pic32/\+The\+Connected\+M\+C\+U\+\_\+\+Labs/nhutsenko/lab6\+\_\+\+R\+T\+O\+S/\+Lab10\+\_\+\+Adv\+\_\+\+Concurrency/src/user.\+c}}
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$sys/attribs.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}task.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}semphr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}user.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}O\+L\+E\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Oled\+Char.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Oled\+Grph.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{user_8c_a22dd9d967cbe39a94c26153f1e96ec1e}{N\+E\+L\+E\+MS}(x)~(sizeof(x) / sizeof((x)\mbox{[}0\mbox{]}))
+\begin{DoxyCompactList}\small\item\em Array length calculator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{user_8c_afe7a49ab9879bd7044b35eb779f30712}{Init\+G\+P\+IO} (void)
+\begin{DoxyCompactList}\small\item\em This function is using for setting buttons on I/O shield. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_addc0a16fa099430e2337628a38764b67}{Init\+App} (void)
+\begin{DoxyCompactList}\small\item\em This function is using for setting all used devices. \end{DoxyCompactList}\item 
+int32\+\_\+t \hyperlink{user_8c_af43a5ccba84396f9e915d620a3040c64}{Set\+Num} ()
+\begin{DoxyCompactList}\small\item\em This function is using for choose a number for game. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_a902a64ca782182bd7360b69639f74063}{Task1} (void $\ast$pv\+Parameters)
+\begin{DoxyCompactList}\small\item\em Game status. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_af01c7f41ef35453d7c0e896db918be88}{Task2} (void $\ast$pv\+Parameters)
+\begin{DoxyCompactList}\small\item\em Points tatus. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_af4c904c48cffb15c04e3c5419020cebb}{Delay\+Ms} (int t)
+\begin{DoxyCompactList}\small\item\em Delay function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \hyperlink{user_8c_a32205f587397312aafe01053ca3452a9}{random\+\_\+mass} \mbox{[}4\mbox{]}
+\item 
+int32\+\_\+t \hyperlink{user_8c_afb3d418800dcb70dca5a5606874c4f84}{my\+\_\+mass} \mbox{[}4\mbox{]}
+\item 
+int \hyperlink{user_8c_ab2a4199793434da2fc6dc7ba916adc0e}{cows} = 0
+\item 
+int \hyperlink{user_8c_a3b6c8fc93873c9863460473f88539409}{bulls} = 0
+\item 
+int32\+\_\+t \hyperlink{user_8c_ad9484f5522d0e5f033037c369365ec61}{i}
+\item 
+int32\+\_\+t \hyperlink{user_8c_ae76a5c07936c410c4f5aa6db28996352}{j}
+\item 
+int32\+\_\+t \hyperlink{user_8c_ada8674351485596cd150447bdece55bc}{num}
+\item 
+int32\+\_\+t \hyperlink{user_8c_a33c4c1ffd4ad93694491419f85daf0a9}{game\+End} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{user_8c_a22dd9d967cbe39a94c26153f1e96ec1e}\label{user_8c_a22dd9d967cbe39a94c26153f1e96ec1e}} 
+\index{user.\+c@{user.\+c}!N\+E\+L\+E\+MS@{N\+E\+L\+E\+MS}}
+\index{N\+E\+L\+E\+MS@{N\+E\+L\+E\+MS}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{N\+E\+L\+E\+MS}{NELEMS}}
+{\footnotesize\ttfamily \#define N\+E\+L\+E\+MS(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})~(sizeof(x) / sizeof((x)\mbox{[}0\mbox{]}))}
+
+
+
+Array length calculator. 
+
+Software realization of delay function, using empty for cycle 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em x} & type of vars into array \\
+\hline
+\mbox{\tt out}  & {\em length} & of mass \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array length 
+\end{DoxyReturn}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{user_8c_af4c904c48cffb15c04e3c5419020cebb}\label{user_8c_af4c904c48cffb15c04e3c5419020cebb}} 
+\index{user.\+c@{user.\+c}!Delay\+Ms@{Delay\+Ms}}
+\index{Delay\+Ms@{Delay\+Ms}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Delay\+Ms()}{DelayMs()}}
+{\footnotesize\ttfamily void Delay\+Ms (\begin{DoxyParamCaption}\item[{int}]{t }\end{DoxyParamCaption})}
+
+
+
+Delay function. 
+
+This function is using for delay between operations 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em delay} & in ms \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+NE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_addc0a16fa099430e2337628a38764b67}\label{user_8c_addc0a16fa099430e2337628a38764b67}} 
+\index{user.\+c@{user.\+c}!Init\+App@{Init\+App}}
+\index{Init\+App@{Init\+App}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Init\+App()}{InitApp()}}
+{\footnotesize\ttfamily void Init\+App (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is using for setting all used devices. 
+
+This function is using for setting all used devices 
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+NE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+NE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_afe7a49ab9879bd7044b35eb779f30712}\label{user_8c_afe7a49ab9879bd7044b35eb779f30712}} 
+\index{user.\+c@{user.\+c}!Init\+G\+P\+IO@{Init\+G\+P\+IO}}
+\index{Init\+G\+P\+IO@{Init\+G\+P\+IO}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Init\+G\+P\+I\+O()}{InitGPIO()}}
+{\footnotesize\ttfamily void Init\+G\+P\+IO (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+This function is using for setting buttons on I/O shield. 
+
+This function is using for setting all used devices 
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+NE} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+N\+O\+NE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_af43a5ccba84396f9e915d620a3040c64}\label{user_8c_af43a5ccba84396f9e915d620a3040c64}} 
+\index{user.\+c@{user.\+c}!Set\+Num@{Set\+Num}}
+\index{Set\+Num@{Set\+Num}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Set\+Num()}{SetNum()}}
+{\footnotesize\ttfamily int32\+\_\+t Set\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is using for choose a number for game. 
+
+This function is using for chhose a number for game 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em integer} & number from 0 to 9 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+integer number from 0 to 9 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a902a64ca782182bd7360b69639f74063}\label{user_8c_a902a64ca782182bd7360b69639f74063}} 
+\index{user.\+c@{user.\+c}!Task1@{Task1}}
+\index{Task1@{Task1}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Task1()}{Task1()}}
+{\footnotesize\ttfamily void Task1 (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Game status. 
+
+This task is using for input user numbers or reseting the game \mbox{\Hypertarget{user_8c_af01c7f41ef35453d7c0e896db918be88}\label{user_8c_af01c7f41ef35453d7c0e896db918be88}} 
+\index{user.\+c@{user.\+c}!Task2@{Task2}}
+\index{Task2@{Task2}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Task2()}{Task2()}}
+{\footnotesize\ttfamily void Task2 (\begin{DoxyParamCaption}\item[{void $\ast$}]{pv\+Parameters }\end{DoxyParamCaption})}
+
+
+
+Points tatus. 
+
+This task is using for checking points status at the game 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{user_8c_a3b6c8fc93873c9863460473f88539409}\label{user_8c_a3b6c8fc93873c9863460473f88539409}} 
+\index{user.\+c@{user.\+c}!bulls@{bulls}}
+\index{bulls@{bulls}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{bulls}{bulls}}
+{\footnotesize\ttfamily int bulls = 0}
+
+\mbox{\Hypertarget{user_8c_ab2a4199793434da2fc6dc7ba916adc0e}\label{user_8c_ab2a4199793434da2fc6dc7ba916adc0e}} 
+\index{user.\+c@{user.\+c}!cows@{cows}}
+\index{cows@{cows}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{cows}{cows}}
+{\footnotesize\ttfamily int cows = 0}
+
+vars for bulls and cows \mbox{\Hypertarget{user_8c_a33c4c1ffd4ad93694491419f85daf0a9}\label{user_8c_a33c4c1ffd4ad93694491419f85daf0a9}} 
+\index{user.\+c@{user.\+c}!game\+End@{game\+End}}
+\index{game\+End@{game\+End}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{game\+End}{gameEnd}}
+{\footnotesize\ttfamily int32\+\_\+t game\+End = 0}
+
+\mbox{\Hypertarget{user_8c_ad9484f5522d0e5f033037c369365ec61}\label{user_8c_ad9484f5522d0e5f033037c369365ec61}} 
+\index{user.\+c@{user.\+c}!i@{i}}
+\index{i@{i}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily int32\+\_\+t i}
+
+iterators \mbox{\Hypertarget{user_8c_ae76a5c07936c410c4f5aa6db28996352}\label{user_8c_ae76a5c07936c410c4f5aa6db28996352}} 
+\index{user.\+c@{user.\+c}!j@{j}}
+\index{j@{j}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{j}{j}}
+{\footnotesize\ttfamily int32\+\_\+t j}
+
+\mbox{\Hypertarget{user_8c_afb3d418800dcb70dca5a5606874c4f84}\label{user_8c_afb3d418800dcb70dca5a5606874c4f84}} 
+\index{user.\+c@{user.\+c}!my\+\_\+mass@{my\+\_\+mass}}
+\index{my\+\_\+mass@{my\+\_\+mass}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{my\+\_\+mass}{my\_mass}}
+{\footnotesize\ttfamily int32\+\_\+t my\+\_\+mass\mbox{[}4\mbox{]}}
+
+array for user numbers \mbox{\Hypertarget{user_8c_ada8674351485596cd150447bdece55bc}\label{user_8c_ada8674351485596cd150447bdece55bc}} 
+\index{user.\+c@{user.\+c}!num@{num}}
+\index{num@{num}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{num}{num}}
+{\footnotesize\ttfamily int32\+\_\+t num}
+
+\mbox{\Hypertarget{user_8c_a32205f587397312aafe01053ca3452a9}\label{user_8c_a32205f587397312aafe01053ca3452a9}} 
+\index{user.\+c@{user.\+c}!random\+\_\+mass@{random\+\_\+mass}}
+\index{random\+\_\+mass@{random\+\_\+mass}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{random\+\_\+mass}{random\_mass}}
+{\footnotesize\ttfamily int32\+\_\+t random\+\_\+mass\mbox{[}4\mbox{]}}
+
+array for random numbers 
