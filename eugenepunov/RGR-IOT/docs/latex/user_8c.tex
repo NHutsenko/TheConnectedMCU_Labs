@@ -1,0 +1,170 @@
+\hypertarget{user_8c}{}\section{user.\+c File Reference}
+\label{user_8c}\index{user.\+c@{user.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}user.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/attribs.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{user_8c_a017cc7467f17665eca1b702990d9832f}{init\+\_\+gpio} (void)
+\begin{DoxyCompactList}\small\item\em Initialize input output Setup functionality and port direction. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_a72861b954416c2ee3260759144d522c8}{Init\+Timer2\+And\+O\+C5\+And4\+And8} (void)
+\begin{DoxyCompactList}\small\item\em Initialize Timer2 Initialize Timer2. Configure O\+C4,O\+C5,O\+C8 control register. Configure P\+WM for R\+GB. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_a58365390a2f6d58ce8173e26f693d999}{init\+\_\+app} (void)
+\item 
+void \hyperlink{user_8c_a866c2674fd055c5db34b3b91dfb793d7}{rgb} (int red, int green, int blue)
+\item 
+void \hyperlink{user_8c_a0b8bba06d10e5946ea2020cd3dd65e56}{start\+\_\+program} ()
+\begin{DoxyCompactList}\small\item\em all functional of programm \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_a6ee901f961bee18d15e0889fcf1e06a7}{fade} ()
+\item 
+void \hyperlink{user_8c_a6b0107d69d6788440cf44bbbc33a9994}{delay} (uint32\+\_\+t n)
+\item 
+void \hyperlink{user_8c_abcbddc8a403b8dfac94a8a15df06d2e7}{brightness} (int bright)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{user_8c_abcbddc8a403b8dfac94a8a15df06d2e7}\label{user_8c_abcbddc8a403b8dfac94a8a15df06d2e7}} 
+\index{user.\+c@{user.\+c}!brightness@{brightness}}
+\index{brightness@{brightness}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{brightness()}{brightness()}}
+{\footnotesize\ttfamily void brightness (\begin{DoxyParamCaption}\item[{int}]{bright }\end{DoxyParamCaption})}
+
+func delay 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em brigh(\+P\+W\+M)} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a6b0107d69d6788440cf44bbbc33a9994}\label{user_8c_a6b0107d69d6788440cf44bbbc33a9994}} 
+\index{user.\+c@{user.\+c}!delay@{delay}}
+\index{delay@{delay}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{delay()}{delay()}}
+{\footnotesize\ttfamily void delay (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+func delay 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em n} & -\/ time in mills \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a6ee901f961bee18d15e0889fcf1e06a7}\label{user_8c_a6ee901f961bee18d15e0889fcf1e06a7}} 
+\index{user.\+c@{user.\+c}!fade@{fade}}
+\index{fade@{fade}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{fade()}{fade()}}
+{\footnotesize\ttfamily void fade (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+fade mode 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a58365390a2f6d58ce8173e26f693d999}\label{user_8c_a58365390a2f6d58ce8173e26f693d999}} 
+\index{user.\+c@{user.\+c}!init\+\_\+app@{init\+\_\+app}}
+\index{init\+\_\+app@{init\+\_\+app}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+app()}{init\_app()}}
+{\footnotesize\ttfamily void init\+\_\+app (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+begins program 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a017cc7467f17665eca1b702990d9832f}\label{user_8c_a017cc7467f17665eca1b702990d9832f}} 
+\index{user.\+c@{user.\+c}!init\+\_\+gpio@{init\+\_\+gpio}}
+\index{init\+\_\+gpio@{init\+\_\+gpio}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{init\+\_\+gpio()}{init\_gpio()}}
+{\footnotesize\ttfamily void init\+\_\+gpio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize input output Setup functionality and port direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a72861b954416c2ee3260759144d522c8}\label{user_8c_a72861b954416c2ee3260759144d522c8}} 
+\index{user.\+c@{user.\+c}!Init\+Timer2\+And\+O\+C5\+And4\+And8@{Init\+Timer2\+And\+O\+C5\+And4\+And8}}
+\index{Init\+Timer2\+And\+O\+C5\+And4\+And8@{Init\+Timer2\+And\+O\+C5\+And4\+And8}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Init\+Timer2\+And\+O\+C5\+And4\+And8()}{InitTimer2AndOC5And4And8()}}
+{\footnotesize\ttfamily void Init\+Timer2\+And\+O\+C5\+And4\+And8 (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize Timer2 Initialize Timer2. Configure O\+C4,O\+C5,O\+C8 control register. Configure P\+WM for R\+GB. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a866c2674fd055c5db34b3b91dfb793d7}\label{user_8c_a866c2674fd055c5db34b3b91dfb793d7}} 
+\index{user.\+c@{user.\+c}!rgb@{rgb}}
+\index{rgb@{rgb}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{rgb()}{rgb()}}
+{\footnotesize\ttfamily void rgb (\begin{DoxyParamCaption}\item[{int}]{red,  }\item[{int}]{green,  }\item[{int}]{blue }\end{DoxyParamCaption})}
+
+func for control rgb led(set color) 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em red,green,blue} & (PwM) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a0b8bba06d10e5946ea2020cd3dd65e56}\label{user_8c_a0b8bba06d10e5946ea2020cd3dd65e56}} 
+\index{user.\+c@{user.\+c}!start\+\_\+program@{start\+\_\+program}}
+\index{start\+\_\+program@{start\+\_\+program}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{start\+\_\+program()}{start\_program()}}
+{\footnotesize\ttfamily void start\+\_\+program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+all functional of programm 
+
+Functional\+: command a -\/ turn on R\+GB led. command f -\/ fade mode command c -\/ set color command b -\/ set brightness 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}

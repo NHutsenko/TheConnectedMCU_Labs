@@ -1,0 +1,124 @@
+\begin{theindex}
+
+  \item {B\+T\+N1\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{14}
+  \item {B\+T\+N2\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{14}
+  \item {brightness}
+    \subitem {user.\+c}, \hyperpage{10}
+
+  \indexspace
+
+  \item {configuration\+\_\+bits.\+c}, \hyperpage{5}
+
+  \indexspace
+
+  \item {delay}
+    \subitem {user.\+c}, \hyperpage{11}
+
+  \indexspace
+
+  \item {fade}
+    \subitem {user.\+c}, \hyperpage{11}
+
+  \indexspace
+
+  \item {init\+\_\+app}
+    \subitem {user.\+c}, \hyperpage{11}
+    \subitem {user.\+h}, \hyperpage{15}
+  \item {init\+\_\+gpio}
+    \subitem {user.\+c}, \hyperpage{12}
+  \item {Init\+Timer2\+And\+O\+C5\+And4\+And8}
+    \subitem {user.\+c}, \hyperpage{12}
+
+  \indexspace
+
+  \item {L\+D1\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{14}
+  \item {L\+D2\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{14}
+  \item {L\+D3\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{14}
+  \item {L\+D4\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}
+    \subitem {user.\+h}, \hyperpage{15}
+
+  \indexspace
+
+  \item {M\+A\+X\+\_\+\+A\+D\+C\+\_\+\+V\+A\+L\+UE}
+    \subitem {user.\+h}, \hyperpage{15}
+  \item {main}
+    \subitem {main.\+c}, \hyperpage{5}
+  \item {main.\+c}, \hyperpage{5}
+    \subitem {main}, \hyperpage{5}
+
+  \indexspace
+
+  \item {P\+W\+M\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}
+    \subitem {user.\+h}, \hyperpage{15}
+  \item {P\+W\+M\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+C\+O\+U\+N\+TS}
+    \subitem {user.\+h}, \hyperpage{15}
+
+  \indexspace
+
+  \item {R\+E\+A\+D\+M\+E.\+md}, \hyperpage{6}
+  \item {rgb}
+    \subitem {user.\+c}, \hyperpage{13}
+
+  \indexspace
+
+  \item {start\+\_\+program}
+    \subitem {user.\+c}, \hyperpage{13}
+
+  \indexspace
+
+  \item {U\+A\+R\+T.\+c}, \hyperpage{6}
+    \subitem {uart4\+\_\+getc}, \hyperpage{6}
+    \subitem {uart4\+\_\+init}, \hyperpage{6}
+    \subitem {uart4\+\_\+putc}, \hyperpage{7}
+    \subitem {uart4\+\_\+puts}, \hyperpage{7}
+    \subitem {uart4\+\_\+test}, \hyperpage{7}
+  \item {U\+A\+R\+T.\+h}, \hyperpage{8}
+    \subitem {uart4\+\_\+getc}, \hyperpage{8}
+    \subitem {uart4\+\_\+init}, \hyperpage{8}
+    \subitem {uart4\+\_\+putc}, \hyperpage{9}
+    \subitem {uart4\+\_\+puts}, \hyperpage{9}
+    \subitem {uart4\+\_\+test}, \hyperpage{9}
+  \item {uart4\+\_\+getc}
+    \subitem {U\+A\+R\+T.\+c}, \hyperpage{6}
+    \subitem {U\+A\+R\+T.\+h}, \hyperpage{8}
+  \item {uart4\+\_\+init}
+    \subitem {U\+A\+R\+T.\+c}, \hyperpage{6}
+    \subitem {U\+A\+R\+T.\+h}, \hyperpage{8}
+  \item {uart4\+\_\+putc}
+    \subitem {U\+A\+R\+T.\+c}, \hyperpage{7}
+    \subitem {U\+A\+R\+T.\+h}, \hyperpage{9}
+  \item {uart4\+\_\+puts}
+    \subitem {U\+A\+R\+T.\+c}, \hyperpage{7}
+    \subitem {U\+A\+R\+T.\+h}, \hyperpage{9}
+  \item {uart4\+\_\+test}
+    \subitem {U\+A\+R\+T.\+c}, \hyperpage{7}
+    \subitem {U\+A\+R\+T.\+h}, \hyperpage{9}
+  \item {user.\+c}, \hyperpage{10}
+    \subitem {brightness}, \hyperpage{10}
+    \subitem {delay}, \hyperpage{11}
+    \subitem {fade}, \hyperpage{11}
+    \subitem {init\+\_\+app}, \hyperpage{11}
+    \subitem {init\+\_\+gpio}, \hyperpage{12}
+    \subitem {Init\+Timer2\+And\+O\+C5\+And4\+And8}, \hyperpage{12}
+    \subitem {rgb}, \hyperpage{13}
+    \subitem {start\+\_\+program}, \hyperpage{13}
+  \item {user.\+h}, \hyperpage{13}
+    \subitem {B\+T\+N1\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{14}
+    \subitem {B\+T\+N2\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{14}
+    \subitem {init\+\_\+app}, \hyperpage{15}
+    \subitem {L\+D1\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{14}
+    \subitem {L\+D2\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{14}
+    \subitem {L\+D3\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{14}
+    \subitem {L\+D4\+\_\+\+P\+O\+R\+T\+\_\+\+B\+IT}, \hyperpage{15}
+    \subitem {M\+A\+X\+\_\+\+A\+D\+C\+\_\+\+V\+A\+L\+UE}, 
+		\hyperpage{15}
+    \subitem {P\+W\+M\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}, \hyperpage{15}
+    \subitem {P\+W\+M\+\_\+\+P\+E\+R\+I\+O\+D\+\_\+\+C\+O\+U\+N\+TS}, 
+		\hyperpage{15}
+
+\end{theindex}
