@@ -1,0 +1,80 @@
+\hypertarget{user_8c}{}\section{D\+:/\+K\+P\+I/pic32/cource\+\_\+work\+\_\+iot.X/user.c File Reference}
+\label{user_8c}\index{D\+:/\+K\+P\+I/pic32/cource\+\_\+work\+\_\+iot.\+X/user.\+c@{D\+:/\+K\+P\+I/pic32/cource\+\_\+work\+\_\+iot.\+X/user.\+c}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}user.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$sys/attribs.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}U\+A\+R\+T.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{user_8c_a689b89d10bed4779688743f7832195ca}{Init\+Gpio} (void)
+\begin{DoxyCompactList}\small\item\em Initialize input output Setup functionality and port direction. \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_addc0a16fa099430e2337628a38764b67}{Init\+App} (void)
+\begin{DoxyCompactList}\small\item\em peripherals initialization \end{DoxyCompactList}\item 
+void \hyperlink{user_8c_a13c8569d49c905034c4c345f7f8b0439}{Control\+State\+Machine} ()
+\begin{DoxyCompactList}\small\item\em state machine for control L\+ED\textquotesingle{}s by Bluetooth This function looks like state machine, has 2 states all L\+ED\textquotesingle{}s turned ON and all L\+ED\textquotesingle{}s turned O\+FF. State machine controls by Bluetooth and U\+A\+RT \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{user_8c_a13c8569d49c905034c4c345f7f8b0439}\label{user_8c_a13c8569d49c905034c4c345f7f8b0439}} 
+\index{user.\+c@{user.\+c}!Control\+State\+Machine@{Control\+State\+Machine}}
+\index{Control\+State\+Machine@{Control\+State\+Machine}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Control\+State\+Machine()}{ControlStateMachine()}}
+{\footnotesize\ttfamily void Control\+State\+Machine (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+state machine for control L\+ED\textquotesingle{}s by Bluetooth This function looks like state machine, has 2 states all L\+ED\textquotesingle{}s turned ON and all L\+ED\textquotesingle{}s turned O\+FF. State machine controls by Bluetooth and U\+A\+RT 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_addc0a16fa099430e2337628a38764b67}\label{user_8c_addc0a16fa099430e2337628a38764b67}} 
+\index{user.\+c@{user.\+c}!Init\+App@{Init\+App}}
+\index{Init\+App@{Init\+App}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Init\+App()}{InitApp()}}
+{\footnotesize\ttfamily void Init\+App (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+peripherals initialization 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\mbox{\Hypertarget{user_8c_a689b89d10bed4779688743f7832195ca}\label{user_8c_a689b89d10bed4779688743f7832195ca}} 
+\index{user.\+c@{user.\+c}!Init\+Gpio@{Init\+Gpio}}
+\index{Init\+Gpio@{Init\+Gpio}!user.\+c@{user.\+c}}
+\subsubsection{\texorpdfstring{Init\+Gpio()}{InitGpio()}}
+{\footnotesize\ttfamily void Init\+Gpio (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize input output Setup functionality and port direction. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em none} & \\
+\hline
+\mbox{\tt in}  & {\em none} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
